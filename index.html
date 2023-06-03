@@ -15,9 +15,8 @@
         }
 
         .container{
-            display: block;
-            flex: row;
-            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
             justify-content: center;
         }
 
@@ -125,18 +124,18 @@
         }
 
         @media screen and (min-width: 600px){
-            html, body {
-                height: 100%;
+            body {
                 margin: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
             .container{
-                display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                /*try to disable html, body css, and use below code to vertically center the container*/
+                /* min-height: 100vh; */ 
             }
             .result-container,
             .summary-container{
